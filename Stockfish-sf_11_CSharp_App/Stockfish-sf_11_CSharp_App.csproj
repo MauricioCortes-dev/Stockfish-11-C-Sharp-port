@@ -7,6 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
+    <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
   </ItemGroup>
 </Project>
