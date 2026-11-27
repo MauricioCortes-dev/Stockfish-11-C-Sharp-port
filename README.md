@@ -27,8 +27,8 @@ This repository contains the source code for both projects. Build the executable
 
 ```text
 Stockfish-sf_11_CSharp_Library/
-└── Stockfish-sf_11_CSharp_Library/
-    └── Engine library source code
+├── Stockfish-sf_11_CSharp_Library.csproj
+└── Engine library source code
 
 Stockfish-sf_11_CSharp_App/
 └── Console application and UCI interface
@@ -45,7 +45,7 @@ dotnet build Stockfish-sf_11_CSharp_App/Stockfish-sf_11_CSharp_App.csproj -c Rel
 To build the library by itself, use the following command.
 
 ```bash
-dotnet build Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj -c Release
+dotnet build Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj -c Release
 ```
 
 Use **Release** builds for normal engine operation and performance comparisons.
@@ -103,7 +103,7 @@ Reference the library project from an application that supports .NET Standard 2.
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
+  <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
 </ItemGroup>
 ```
 
@@ -165,8 +165,8 @@ Este repositorio contiene el código fuente de los dos proyectos. Compila el eje
 
 ```text
 Stockfish-sf_11_CSharp_Library/
-└── Stockfish-sf_11_CSharp_Library/
-    └── Código fuente de la biblioteca del motor
+├── Stockfish-sf_11_CSharp_Library.csproj
+└── Código fuente de la biblioteca del motor
 
 Stockfish-sf_11_CSharp_App/
 └── Aplicación de consola e interfaz UCI
@@ -183,7 +183,7 @@ dotnet build Stockfish-sf_11_CSharp_App/Stockfish-sf_11_CSharp_App.csproj -c Rel
 Para compilar únicamente la biblioteca, usa el siguiente comando.
 
 ```bash
-dotnet build Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj -c Release
+dotnet build Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj -c Release
 ```
 
 Utiliza compilaciones **Release** para ejecutar el motor y comparar su rendimiento.
@@ -241,7 +241,7 @@ Referencia el proyecto de biblioteca desde una aplicación compatible con .NET S
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
+  <ProjectReference Include="../Stockfish-sf_11_CSharp_Library/Stockfish-sf_11_CSharp_Library.csproj" />
 </ItemGroup>
 ```
 
